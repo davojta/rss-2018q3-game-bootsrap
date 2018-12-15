@@ -13,6 +13,11 @@ export default `
         <li class="nav-item">
           <a class="nav-link" href="#">Landing</a>
         </li>
+        <li class="nav-item js-call-modal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">
+        Launch demo modal
+        </button>
+         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">Disabled</a>
         </li>

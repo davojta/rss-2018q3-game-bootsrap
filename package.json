@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./src/**/*.js",
+    "fix-lint": "eslint -c .eslintrc.js ./src/**/*.js --fix",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
     "build": "webpack --mode production",

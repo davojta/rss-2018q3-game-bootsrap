@@ -1,15 +1,17 @@
 export class GameState {
-    constructor() {
-        this.playerName = '';
-    }
+  constructor() {
+    this.playerName = '';
+  }
+
+  setPlayerName(name = '') {
+    this.playerName = name;
+  }
 }
 
 let gameState = null;
 
 export const setGameState = (state) => {
-    gameState = state;
-}
+  gameState = state;
+};
 
-export const getGameState = () => {
-    return gameState;
-}
+export const getGameState = () => gameState;

@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import template from './nav.template';
 import './nav.css';
 

@@ -1,12 +1,10 @@
-import headerTemplate from './header.html';
+import template from './header.template';
 import './header.css';
 
 class Header {
   static draw() {
-    const headerHTML = document.createElement('section');
-    headerHTML.className = 'header';
-    headerHTML.innerHTML = headerTemplate;
-    document.body.appendChild(headerHTML);
+    const contentEl = document.querySelector('#content');
+    contentEl.insertAdjacentHTML('beforeend', template);
   }
 }
 

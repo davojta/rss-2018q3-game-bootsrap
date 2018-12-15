@@ -1,12 +1,10 @@
-import headerTemplate from './nav.html';
+import template from './nav.template';
 import './nav.css';
 
 class Header {
   static draw() {
-    const headerHTML = document.createElement('section');
-    headerHTML.className = 'app-navigation';
-    headerHTML.innerHTML = headerTemplate;
-    document.body.appendChild(headerHTML);
+    const contentEl = document.querySelector('body');
+    contentEl.insertAdjacentHTML('afterbegin', template);
   }
 }
 

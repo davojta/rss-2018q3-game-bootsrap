@@ -9,8 +9,8 @@ import './index.css';
 
 
 const startApp = () => {
-    Header.draw();
     Nav.draw();
+    Header.draw();
 }
 
 startApp();

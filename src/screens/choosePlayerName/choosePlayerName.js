@@ -1,7 +1,6 @@
 import $ from 'jquery';
 
 import template from './choosePlayerName.template';
-import { getGameState } from '../game';
 
 
 class ChoosePlayerName {

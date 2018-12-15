@@ -4,12 +4,12 @@ import $ from 'jquery';
 
 import { GameState, setGameState } from './game'; 
 
-import Header from './header/header';
-import Nav from './navigation/nav';
+import Header from './components/header/header';
+import Nav from './components/navigation/nav';
 
 import './index.css';
-import ModalDialog from './modal-dialog/modal-dialog';
-import ChoosePlayerName from './screens/choosePlayerName';
+import ModalDialog from './components/modal-dialog/modal-dialog';
+import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
 
 
 const startApp = () => {
@@ -31,7 +31,7 @@ const startApp = () => {
 
         console.log('playerName', playerName);
         gameState.playerName = playerName;
-        ChoosePlayerName.empty();
+
         Nav.update(gameState);
     })
 }
